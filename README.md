@@ -71,14 +71,28 @@ This is a guide for beginners who wants to start with snapshot testing and they 
 
 ## Shallow and Mount Rendering (Enzyme)
 
+![alt text](/assets/00-components.png "Components")
+
 - **Mount** rendering goes all the way down the hierarchy until it reaches the end of the tree, the DOM elements
+
+![alt text](/assets/01-enzyme-mount.png "Enzyme Mount")
+
 - **Shallow** rendering merely goes to the immediate node of the tree
+
+![alt text](/assets/01-enzyme-shallow.png "Enzyme Shallow")
+
 - By default, the snapshots reflect the **mount** rendered output for both `enzyme` and `react-test-renderer`
+
+![alt text](/assets/03-react-test-renderer.png "react-test-renderer")
 
 ## Snapshot Test Components with Dynamic Props
 
 - If a component accepts props and based on a prop a different JSX is returned, then, it is better that you should snapshot test every possible case.
 - If you do this, you will have to write multiple snapshot tests in the test file but there will be only one `.snap` file and it will contain all the snapshots
+
+![alt text](/assets/04-dynamic-props-and-jsx-test.png "Dynamic Props and JSX")
+
+![alt text](/assets/04-dynamic-props-and-jsx-test-output.png "Dynamic Props and JSX Snapshot Output")
 
 ## Misc.
 
